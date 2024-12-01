@@ -9,6 +9,7 @@ import * as ImagePicker from "expo-image-picker";
 import { ImageContext } from "../context/ImageContext";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserinfo } from "../redux/userSlice";
+import Toast from "react-native-toast-message";
 
 const DrawerContent = () => {
   const navigation = useNavigation();
@@ -46,6 +47,11 @@ const DrawerContent = () => {
     //   error;
     // }
     navigation.navigate("Login");
+    Toast.show({
+      type: "success",
+      text1: "Success",
+      text2: "Sign out successfully!",
+    });
   };
 
   return (
