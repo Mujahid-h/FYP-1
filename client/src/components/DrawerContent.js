@@ -14,7 +14,7 @@ import Toast from "react-native-toast-message";
 const DrawerContent = () => {
   const navigation = useNavigation();
   const { setSelectedImage } = useContext(ImageContext);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const { userInfo } = useSelector((state) => state.user);
 
   const handleCameraLaunch = async () => {
