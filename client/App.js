@@ -40,7 +40,7 @@ import Toast from "react-native-toast-message";
 import AppNavigator from "./AppNavigator";
 import { Provider } from "react-redux";
 import store from "./src/redux/store";
-import { ImageProvider } from "./src/context/ImageContext"; // Ensure this import is correct
+import { ImageProvider } from "./src/context/ImageContext";
 
 const App = () => {
   return (
